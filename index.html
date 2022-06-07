@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop thể thao</title>
+    <link rel="icon" href="./assets/img/Slider/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <!-- Begin: Nav -->
+            <ul id="nav">
+                <li><a href="#">
+                    <i class="nav-home ti-home"></i>
+                    Trang chủ
+                </a></li>
+                <li><a href="#Aobongda">Áo bóng đá</a></li>
+                <li><a href="#Giaybongda">Giày bóng đá</a></li>
+                <li>
+                    <a href="#Phukienbongda">
+                        Phụ kiện
+                        <i class="nav-arrow-down ti-angle-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="#Bongda">Bóng</a></li>
+                        <li><a href="#Gangtay">Găng tay</a></li>
+                        <li><a href="#">Túi đựng</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- End: Nav -->
+
+            <!-- Begin: Search btn -->
+                <div class="search-btn">
+                    <i class="search-icon ti-search"></i>
+                </div>
+                <div class="user-btn js-user-btn">
+                    <i class="user-icon ti-user"></i>
+                </div>
+             <!-- End: Search btn -->
+        </div>
+
+        <div id="slider">
+            <div class="slideshow">
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <img src="./assets/img/Slider/Slider1.png" style="width:100%;">      
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="./assets/img/Slider/Slider2.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="./assets/img/Slider/Slider3.png" style="width:100%">
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <br>
+            <!--End Slide-->
+            <!-- scrip of slide -->
+            <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) {
+                        slideIndex = 1
+                    }
+                    if (n < 1) {
+                        slideIndex = slides.length
+                    }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                }
+            </script>
+        </div>
+
+        <div id="container">  
+            <!-- Ao Bong Da-->
+            <div id="content-heading">
+                <div id="Aobongda" class="content-section">
+                    <!-- <h2 class="suv-content-section">Áo bóng đá</h2> -->
+                    <div class="suv-content-section">
+                        Áo bóng đá
+                    </div>
+                </div>
+                <div class="buy-list">
+                    <div class="buy-item">
+                        <img src="./assets/img/Aobongda/Ý trắng.jpg" alt="" class="buy-img">
+                        <div class="buy-body">
+                            <h3 class="buy-heading">Áo bóng đá Ý trắng</h3>
+                            <p class="buy-price">80.000đ <span class="buy-sub-price">(Hàng thun lạnh)</span></p>
+                            <p class="buy-price">120.000đ <span class="buy-sub-price">(Hàng thun co giãn)</span></p>
+                            <p class="buy-price">160.000đ <span class="buy-sub-price">(Hàng mè caro)</span></p>
+                            <button class="buy-btn js-buy-btn">Buy now</button>
+                            <i class="ti-shopping-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="buy-item">
+                        <img src="./assets/img/Aobongda/ý xanh đen.jpg" alt="" class="buy-img">
+                        <div class="buy-body">
+                            <h3 class="buy-heading">Áo bóng đá Ý xanh đen</h3>
+                            <p class="buy-price">80.000đ <span class="buy-sub-price">(Hàng thun lạnh)</span></p>
+                            <p class="buy-price">120.000đ <span class="buy-sub-price">(Hàng thun co giãn)</span></p>
+                            <p class="buy-price">160.000đ <span class="buy-sub-price">(Hàng mè caro)</span></p>
+                            <button class="buy-btn js-buy-btn">Buy now</button>
+                            <i class="ti-shopping-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="buy-item">
+                        <img src="./assets/img/Aobongda/Áo Liverpool.jpg" alt="" class="buy-img">
+                        <div class="buy-body">
+                            <h3 class="buy-heading">Áo bóng đá Liverpool</h3>
+                            <p class="buy-price">80.000đ <span class="buy-sub-price">(Hàng thun lạnh)</span></p>
+                            <p class="buy-price">120.000đ <span class="buy-sub-price">(Hàng thun co giãn)</span></p>
+                            <p class="buy-price">160.000đ <span class="buy-sub-price">(Hàng mè caro)</span></p>
+                            <button class="buy-btn js-buy-btn">Buy now</button>
+                            <i class="ti-shopping-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="buy-item">
+                        <img src="./assets/img/Aobongda/Áo Leicester City.jpg" alt="" class="buy-img">
+                        <div class="buy-body">
+                            <h3 class="buy-heading">Áo bóng đá Leicester City</h3>
+                            <p class="buy-price">80.000đ <span class="buy-sub-price">(Hàng thun lạnh)</span></p>
+                            <p class="buy-price">120.000đ <span class="buy-sub-price">(Hàng thun co giãn)</span></p>
+                            <p class="buy-price">160.000đ <span class="buy-sub-price">(Hàng mè caro)</span></p>
+                            <button class="buy-btn js-buy-btn">Buy now</button>
+                            <i class="ti-shopping-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Next items -->
+                <div class="buy-list">
+                    <div class="buy-item">
+                        <img src="./assets/img/Aobongda/Arsenal đỏ.jpg" alt="" class="buy-img">
+                        <div class="buy-body">
+                            <h3 class="buy-heading">Áo bóng đá Arsenal đỏ</h3>
+                            <p class="buy-price">80.000đ <span class="buy-sub-price">(Hàng thun lạnh)</span></p>
+                            <p class="buy-price">120.000đ <span class="buy-sub-price">(Hàng thun co giãn)</span></p>
+                            <p class="buy-price">160.000đ <span class="buy-sub-price">(Hàng mè caro)</span></p>
+                            <button class="buy-btn js-buy-btn">Buy now</button>
+                            <i class="ti-shopping-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="buy-item">
+                        <img src="./assets/img/Aobongda/Chelsea Vàng.jpg" alt="" class="buy-img">
+                        <div class="buy-body">
+                            <h3 class="buy-heading">Áo bóng đá Chelsea Vàng</h3>
+                            <p class="buy-price">80.000đ <span class="buy-sub-price">(Hàng thun lạnh)</span></p>
+                            <p class="buy-price">120.000đ <span class="buy-sub-price">(Hàng thun co giãn)</span></p>
+                            <p class="buy-price">160.000đ <span class="buy-sub-price">(Hàng mè caro)</span></p>
+                            <button class="buy-btn js-buy-btn">Buy now</button>
+                            <i class="ti-shopping-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="buy-item">
+                        <img src="./assets/img/Aobongda/Manchester City Trắng Biển.jpg" alt="" class="buy-img">
+                        <div class="buy-body">
+                            <h3 class="buy-heading">Áo bóng đá Manchester City</h3>
+                            <p class="buy-price">80.000đ <span class="buy-sub-price">(Hàng thun lạnh)</span></p>
+                            <p class="buy-price">120.000đ <span class="buy-sub-price">(Hàng thun co giãn)</span></p>
+                            <p class="buy-price">160.000đ <span class="buy-sub-price">(Hàng mè caro)</span></p>
+                            <button class="buy-btn js-buy-btn">Buy now</button>
+                            <i class="ti-shopping-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="buy-item">
+                        <img src="./assets/img/Aobongda/Manchester United Xanh Chuối.jpg" alt="" class="buy-img">
+                        <div class="buy-body">
+                            <h3 class="buy-heading">Áo bóng đá Manchester United</h3>
+                            <p class="buy-price">80.000đ <span class="buy-sub-price">(Hàng thun lạnh)</span></p>
+                            <p class="buy-price">120.000đ <span class="buy-sub-price">(Hàng thun co giãn)</span></p>
+                            <p class="buy-price">160.000đ <span class="buy-sub-price">(Hàng mè caro)</span></p>
+                            <button class="buy-btn js-buy-btn">Buy now</button>
+                            <i class="ti-shopping-cart"></i>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Giay Bong Da-->
+            <div id="content-heading">
+                <div id="Giaybongda" class="content-section">
+                    <!-- <h2 class="suv-content-section">Áo bóng đá</h2> -->
+                    <div class="suv-content-section">
+                        Giày bóng đá
+                    </div>
+                </div>
+                <div class="buy-list">
+                    <div class="buy-item">
+                        <img src="./assets/img/Giaybongda/Tứ Linh Long.jpg" alt="" class="buy-img">
+                        <div class="buy-body">
+                            <h3 class="buy-heading">Giày Tứ Linh Long</h3>
+                            <p class="buy-price">999.000đ</p>
+                            <button class="buy-btn js-buy-btn">Buy now</button>
+                            <i class="ti-shopping-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="buy-item">
+                        <img src="./assets/img/Giaybongda/Tứ Linh Lân.jpg" alt="" class="buy-img">
+                        <div class="buy-body">
+                            <h3 class="buy-heading">Giày Tứ Linh Lân</h3>
+                            <p class="buy-price">999.000đ</p>
+                            <button class="buy-btn js-buy-btn">Buy now</button>
+                            <i class="ti-shopping-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="buy-item">
+                        <img src="./assets/img/Giaybongda/Tứ Linh Phượng.jpg" alt="" class="buy-img">
+                        <div class="buy-body">
+                            <h3 class="buy-heading">Giày Tứ Linh Phượng</h3>
+                            <p class="buy-price">999.000đ</p>
+                            <button class="buy-btn js-buy-btn">Buy now</button>
+                            <i class="ti-shopping-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="buy-item">
+                        <img src="./assets/img/Giaybongda/Tứ Linh Quy.jpg" alt="" class="buy-img">
+                        <div class="buy-body">
+                            <h3 class="buy-heading">Giày Tứ Linh Quy</h3>
+                            <p class="buy-price">999.000đ</p>
+                            <button class="buy-btn js-buy-btn">Buy now</button>
+                            <i class="ti-shopping-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Next items -->
+                <div class="buy-list">
+                    <div class="buy-item">
+                        <img src="./assets/img/Giaybongda/Wika Quang Hải Neo xanh trắng.jpg" alt="" class="buy-img">
+                        <div class="buy-body">
+                            <h3 class="buy-heading">Giày Wika Quang Hải Neo xanh trắng</h3>
+                            <p class="buy-price">469.000đ</p>
+                            <button class="buy-btn js-buy-btn">Buy now</button>
+                            <i class="ti-shopping-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="buy-item">
+                        <img src="./assets/img/Giaybongda/Wika Quang Hải Neo hồng.jpg" alt="" class="buy-img">
+                        <div class="buy-body">
+                            <h3 class="buy-heading">Giày Wika Quang Hải Neo hồng</h3>
+                            <p class="buy-price">420.000đ</p>
+                            <button class="buy-btn js-buy-btn">Buy now</button>
+                            <i class="ti-shopping-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="buy-item">
+                        <img src="./assets/img/Giaybongda/Wika Quang Hải Neo xám.jpg" alt="" class="buy-img">
+                        <div class="buy-body">
+                            <h3 class="buy-heading">Giày Wika Quang Hải Neo xám"</h3>
+                            <p class="buy-price">420.000đ</p>
+                            <button class="buy-btn js-buy-btn">Buy now</button>
+                            <i class="ti-shopping-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="buy-item">
+                        <img src="./assets/img/Giaybongda/Wika Quang Hải Xanh navy.jpg" alt="" class="buy-img">
+                        <div class="buy-body">
+                            <h3 class="buy-heading">Giày Wika Quang Hải Xanh navy</h3>
+                            <p class="buy-price">420.000đ</p>
+                            <button class="buy-btn js-buy-btn">Buy now</button>
+                            <i class="ti-shopping-cart"></i>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+
+            <!-- Phu Kien Bong Da-->
+            <div id="content-heading">
+                <div id="Phukienbongda" class="content-section">
+                    <!-- <h2 class="suv-content-section">Áo bóng đá</h2> -->
+                    <div class="suv-content-section">
+                        Phụ kiện bóng 
+                    </div>
+                </div>
+                <div id="Bongda" class="buy-list">
+                    <div class="buy-item">
+                        <img src="./assets/img/Phukien/bong1.jpg" alt="" class="buy-img">
+                        <div class="buy-body">
+                            <h3 class="buy-heading">Quả bóng đá Seagame 31</h3>
+                            <p class="buy-price">1.899.000đ</p>
+                            <button class="buy-btn js-buy-btn">Buy now</button>
+                            <i class="ti-shopping-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="buy-item">
+                        <img src="./assets/img/Phukien/bong2.jpg" alt="" class="buy-img">
+                        <div class="buy-body">
+                            <h3 class="buy-heading">Bóng động lực 2.05</h3>
+                            <p class="buy-price">800.000đ</p>
+                            <button class="buy-btn js-buy-btn">Buy now</button>
+                            <i class="ti-shopping-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="buy-item">
+                        <img src="./assets/img/Phukien/bong3.jpg" alt="" class="buy-img">
+                        <div class="buy-body">
+                            <h3 class="buy-heading">Bóng động lực 3.127</h3>
+                            <p class="buy-price">200.000đ</p>
+                            <button class="buy-btn js-buy-btn">Buy now</button>
+                            <i class="ti-shopping-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="buy-item">
+                        <img src="./assets/img/Phukien/bong4.jpg" alt="" class="buy-img">
+                        <div class="buy-body">
+                            <h3 class="buy-heading">Bóng động lực UHV 3.05</h3>
+                            <p class="buy-price">250.000đ</p>
+                            <button class="buy-btn js-buy-btn">Buy now</button>
+                            <i class="ti-shopping-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Next items -->
+                <div id="Gangtay" class="buy-list">
+                    <div class="buy-item">
+                        <img src="./assets/img/Phukien/gang1.jpg" alt="" class="buy-img">
+                        <div class="buy-body">
+                            <h3 class="buy-heading">Găng tay thủ môn HO Cam</h3>
+                            <p class="buy-price">550.000đ</p>
+                            <button class="buy-btn js-buy-btn">Buy now</button>
+                            <i class="ti-shopping-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="buy-item">
+                        <img src="./assets/img/Phukien/gang2.jpg" alt="" class="buy-img">
+                        <div class="buy-body">
+                            <h3 class="buy-heading">Găng tay thủ môn HO Trắng</h3>
+                            <p class="buy-price">550.000đ</p>
+                            <button class="buy-btn js-buy-btn">Buy now</button>
+                            <i class="ti-shopping-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="buy-item">
+                        <img src="./assets/img/Phukien/gang3.jpg" alt="" class="buy-img">
+                        <div class="buy-body">
+                            <h3 class="buy-heading">Găng tay thủ môn H3 ROBO Đỏ"</h3>
+                            <p class="buy-price">500.000đ</p>
+                            <button class="buy-btn js-buy-btn">Buy now</button>
+                            <i class="ti-shopping-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="buy-item">
+                        <img src="./assets/img/Phukien/gang4.jpg" alt="" class="buy-img">
+                        <div class="buy-body">
+                            <h3 class="buy-heading">Găng tay thủ môn H3 ROBO Xanh Lá</h3>
+                            <p class="buy-price">500.000đ</p>
+                            <button class="buy-btn js-buy-btn">Buy now</button>
+                            <i class="ti-shopping-cart"></i>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </div>
+              
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container-footer">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Chấp nhận thanh toán</h4>
+                        <ul>
+                            <li><a href="#">Chuyển khoản ngân hàng</a></li>
+                            <li><a href="#">Visa, Master Card</a></li>
+                            <li><a href="#">Thanh toán khi nhận hàng</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Hỗ trợ khách hàng</h4>
+                        <ul>
+                            <li><a href="#">Bảng báo giá</a></li>
+                            <li><a href="#">Hình thức thanh toán</a></li>
+                            <li><a href="#">Giao hàng & Trả hàng</a></li>
+                            <li><a href="#">Chính sách & Bảo hành</a></li>
+                            <li><a href="#">Bảo mật thông tin</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Ủng hộ chúng tôi</h4>
+                        <ul>
+                            <li><a href="#">Hướng dẫn ủng hộ</a></li>
+                            <li><a href="#">Mục đích kêu gọi</a></li>
+                            <li><a href="#">Thành quả</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Theo dõi chúng tôi </h4>
+                        <div class="social-links">
+                            <a href="#"><i class="ti-facebook"></i></a>
+                            <a href="#"><i class="ti-twitter"></i></a>
+                            <a href="#"><i class="ti-instagram"></i></a>
+                            <a href="#"><i class="ti-google"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Buy -->
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+            <div class="modal-close js-modal-close">
+                <i class="ti-close"></i>
+            </div>
+            <header class="modal-header">
+                <i class="modal-heading-icon ti-bag"></i>
+                Giỏ hàng
+            </header>
+
+            <div class="modal-body">
+                <label for="" class="modal-label">
+                    <i class="ti-user"></i>
+                </label>
+                <input type="text" class="modal-input" placeholder="Họ tên *">
+
+                <label for="" class="modal-label">
+                    <i class="ti-email"></i>
+                </label>
+                <input type="email" class="modal-input" placeholder="Email ">
+
+                <label for="" class="modal-label">
+                    <i class="ti-mobile"></i>
+                </label>
+                <input type="text" class="modal-input" placeholder="Điện thoại *">
+                <br>
+                <br>
+                <label for="" class="modal-label">
+                    <i class="ti-location-pin"></i>
+                </label>
+                <input type="text" class="modal-input" placeholder="Địa chỉ nhận hàng *">
+                <input type="text" class="modal-input" placeholder="Tỉnh/Thành Phố">
+                <input type="text" class="modal-input" placeholder="Quận/Huyện">
+
+                <button id="buy-product">
+                    PAY
+                    <i class="ti-check"></i>
+                </button>
+            </div>
+
+            <footer class="modal-footer">
+                <p class="modal-help">Need <a href="">help?</a></p>
+            </footer> 
+        </div>
+    </div>
+
+    <!-- Form Login -->
+    <div class="user js-modal-user">
+        <form action="" id="form-login">
+            <h1 class="form-heading">Form đăng nhập</h1>
+            <div class="form-group">
+                <i class="ti-user"></i>
+                <input type="text" class="form-input" placeholder="Tên đăng nhập">
+            </div>
+            <div class="form-group">
+                <i class="ti-key"></i>
+                <input type="password" class="form-input" placeholder="Mật khẩu">
+                <div id="eye">
+                    <i class="ti-eye"></i>
+                </div>
+            </div>
+            <input type="submit" value="Đăng nhập" class="form-submit js-user-close">
+        </form>
+    </div>
+
+    <!-- JS button user -->
+    <script>
+        const userBtn = document.querySelector('.js-user-btn')
+        const modalUser = document.querySelector('.js-modal-user')
+        const modalUserClose = document.querySelector('js-user-close') 
+        
+         // Hàm hiển thị form đăng nhập
+        function showUser() {
+            modalUser.classList.add('open')
+        }
+
+        // Hàm ẩn form
+        function hideUser() {
+            modalUser.classList.remove('open')
+        }
+
+        // Nghe hành vi click vào icon user
+        userBtn.addEventListener('click', showUser)
+
+        // Nghe hành vi click vào nút Đăng nhập để ẩn form
+        modalUserClose.addEventListener('click', hideUser)
+
+    </script>
+
+    <!-- JS button buy -->
+    <script>
+        const buyBtns = document.querySelectorAll('.js-buy-btn')
+        const modal = document.querySelector('.js-modal')
+        const modalClose = document.querySelector('.js-modal-close')
+        const modalContainer = document.querySelector('.js-modal-container')
+
+        // Hàm hiển thị modal mua ao (Thêm class open vào modal)     
+        function showBuyBtn() {
+            modal.classList.add('open')
+        }
+
+        // Hàm ẩn modal mua ao (Gỡ bỏ class open của modal)     
+        function hideBuyBtn() {
+            modal.classList.remove('open')
+        }
+
+        // Lặp qua từng thẻ button và nghe hành vi click
+        for(const buyBtn of buyBtns) {
+            buyBtn.addEventListener('click', showBuyBtn)
+        }
+
+        // Nghe hành vi click vào nút close
+        modalClose.addEventListener('click', hideBuyBtn)
+
+        modal.addEventListener('click', hideBuyBtn)
+
+        modalContainer.addEventListener('click', function (event) {
+            event.stopPropagation()
+        })
+    </script>
+    
+</body>
+</html>
